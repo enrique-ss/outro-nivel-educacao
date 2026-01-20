@@ -8,7 +8,7 @@ Um jogo educativo onde crianças aprendem sobre Saúde, Esportes e Educação at
 
 ## Como funciona?
 
-1. Escolhe uma categoria (🍎 Saúde, ⚽ Esportes, 📚 Educação)
+1. Escolhe uma categoria (🍎 Saúde, ⚽ Esportes, 📚 Educação, 🤖 Programação)
 2. Estuda o conteúdo da lição
 3. Responde o quiz
 4. Ganha XP, sobe de nível e desbloqueia novas lições

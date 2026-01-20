@@ -2,7 +2,8 @@ const APP_DATA = {
     categories: [
         { id: 'saude', name: 'Saúde', icon: '🍎', color: '#ff5263' },
         { id: 'esportes', name: 'Esportes', icon: '⚽', color: '#6a5ae0' },
-        { id: 'educacao', name: 'Educação', icon: '📚', color: '#00d68f' }
+        { id: 'educacao', name: 'Educação', icon: '📚', color: '#00d68f' },
+        { id: 'programacao', name: 'Programação', icon: '💻', color: '#ff6b9d' }
     ],
     lessons: {
         saude: [
@@ -10,21 +11,27 @@ const APP_DATA = {
                 id: 's1', title: 'Higiene Diária', icon: '🧼', requiredLevel: 1,
                 content: `<h3>Por que Lavar as Mãos?</h3><p>Nossas mãos tocam em muitas coisas durante o dia e podem carregar germes invisíveis!</p><h3>Como Fazer:</h3><ul><li>Use água e sabão</li><li>Esfregue por 20 segundos</li><li>Lave antes das refeições</li></ul>`,
                 quiz: [
-                    { q: "Quando devemos lavar as mãos?", opts: ["Só de manhã", "Antes de comer", "Nunca", "Só à noite"], a: 1 }
+                    { q: "Quando devemos lavar as mãos?", opts: ["Só de manhã", "Antes de comer", "Nunca", "Só à noite"], a: 1 },
+                    { q: "Por quanto tempo devemos esfregar as mãos?", opts: ["5 segundos", "20 segundos", "1 minuto", "Não precisa esfregar"], a: 1 },
+                    { q: "O que usamos para lavar as mãos?", opts: ["Só água", "Água e sabão", "Só sabão", "Refrigerante"], a: 1 }
                 ]
             },
             {
                 id: 's2', title: 'Alimentação Saudável', icon: '🥗', requiredLevel: 2,
                 content: `<h3>Comida é Energia!</h3><p>Nosso corpo precisa de nutrientes para funcionar bem, crescer e ter energia para brincar!</p><h3>Alimentos Importantes:</h3><ul><li>Frutas e vegetais</li><li>Grãos integrais</li><li>Proteínas</li></ul>`,
                 quiz: [
-                    { q: "O que nos dá energia para brincar?", opts: ["Apenas doces", "Alimentos saudáveis", "Refrigerante", "Nada"], a: 1 }
+                    { q: "O que nos dá energia para brincar?", opts: ["Apenas doces", "Alimentos saudáveis", "Refrigerante", "Nada"], a: 1 },
+                    { q: "Qual desses é um alimento saudável?", opts: ["Doces", "Maçã", "Sorvete", "Bala"], a: 1 },
+                    { q: "Por que precisamos comer frutas e vegetais?", opts: ["Só por diversão", "Para ter nutrientes", "Não precisamos", "Para ficar doente"], a: 1 }
                 ]
             },
             {
                 id: 's3', title: 'Sono e Descanso', icon: '😴', requiredLevel: 3,
                 content: `<h3>Por que Dormir é Importante?</h3><p>Durante o sono, nosso corpo descansa e se prepara para um novo dia cheio de aventuras!</p><h3>Benefícios:</h3><ul><li>Crescemos enquanto dormimos</li><li>Nosso cérebro organiza memórias</li><li>Acordamos com mais energia</li></ul>`,
                 quiz: [
-                    { q: "O que acontece quando dormimos bem?", opts: ["Ficamos cansados", "Crescemos e descansamos", "Nada", "Ficamos doentes"], a: 1 }
+                    { q: "O que acontece quando dormimos bem?", opts: ["Ficamos cansados", "Crescemos e descansamos", "Nada", "Ficamos doentes"], a: 1 },
+                    { q: "O que nosso cérebro faz enquanto dormimos?", opts: ["Para de funcionar", "Organiza memórias", "Fica doente", "Não faz nada"], a: 1 },
+                    { q: "Como acordamos depois de uma boa noite de sono?", opts: ["Cansados", "Com energia", "Tristes", "Doentes"], a: 1 }
                 ]
             }
         ],
@@ -33,21 +40,27 @@ const APP_DATA = {
                 id: 'e1', title: 'Futebol Básico', icon: '⚽', requiredLevel: 1,
                 content: `<h3>O Esporte Mais Popular!</h3><p>O futebol é jogado por milhões de pessoas ao redor do mundo!</p><h3>Regras Básicas:</h3><ul><li>Duas equipes de 11 jogadores</li><li>Marcar gols no gol adversário</li><li>Não pode usar as mãos (exceto o goleiro)</li></ul>`,
                 quiz: [
-                    { q: "Quantos jogadores tem cada time de futebol?", opts: ["5", "11", "7", "15"], a: 1 }
+                    { q: "Quantos jogadores tem cada time de futebol?", opts: ["5", "11", "7", "15"], a: 1 },
+                    { q: "Qual é o objetivo do futebol?", opts: ["Correr muito", "Marcar gols", "Usar as mãos", "Ficar parado"], a: 1 },
+                    { q: "Quem pode usar as mãos no futebol?", opts: ["Todos", "O goleiro", "Ninguém", "O técnico"], a: 1 }
                 ]
             },
             {
                 id: 'e2', title: 'Basquete para Iniciantes', icon: '🏀', requiredLevel: 2,
                 content: `<h3>Arremesso na Cesta!</h3><p>No basquete, o objetivo é acertar a bola na cesta do adversário!</p><h3>Como Jogar:</h3><ul><li>Quicar a bola ao se movimentar</li><li>Arremessar na cesta</li><li>Trabalho em equipe</li></ul>`,
                 quiz: [
-                    { q: "Como você se movimenta com a bola no basquete?", opts: ["Correndo com ela", "Quicando", "Chutando", "Arremessando"], a: 1 }
+                    { q: "Como você se movimenta com a bola no basquete?", opts: ["Correndo com ela", "Quicando", "Chutando", "Arremessando"], a: 1 },
+                    { q: "Onde devemos acertar a bola no basquete?", opts: ["No chão", "Na cesta", "Na parede", "Em outro jogador"], a: 1 },
+                    { q: "O que é importante no basquete?", opts: ["Jogar sozinho", "Trabalho em equipe", "Usar os pés", "Não quicar a bola"], a: 1 }
                 ]
             },
             {
                 id: 'e3', title: 'Natação e Segurança', icon: '🏊', requiredLevel: 3,
                 content: `<h3>Nadando com Segurança!</h3><p>Nadar é ótimo exercício e muito divertido, mas sempre precisamos de segurança!</p><h3>Regras Importantes:</h3><ul><li>Sempre nade com supervisão</li><li>Use colete se não souber nadar</li><li>Respeite a profundidade</li></ul>`,
                 quiz: [
-                    { q: "Quando podemos nadar sozinhos?", opts: ["Sempre", "Nunca, precisamos supervisão", "Só de dia", "Quando quiser"], a: 1 }
+                    { q: "Quando podemos nadar sozinhos?", opts: ["Sempre", "Nunca, precisamos supervisão", "Só de dia", "Quando quiser"], a: 1 },
+                    { q: "O que devemos usar se não sabemos nadar?", opts: ["Nada", "Colete salva-vidas", "Roupas pesadas", "Sapatos"], a: 1 },
+                    { q: "Por que a natação precisa de supervisão?", opts: ["Não precisa", "Por segurança", "Por diversão", "Para competir"], a: 1 }
                 ]
             }
         ],
@@ -56,21 +69,56 @@ const APP_DATA = {
                 id: 'd1', title: 'O Sistema Solar', icon: '🌍', requiredLevel: 1,
                 content: `<h3>Nosso Lar no Espaço!</h3><p>A Terra faz parte do Sistema Solar, junto com outros 7 planetas que giram ao redor do Sol!</p><h3>Planetas:</h3><ul><li>Mercúrio, Vênus, Terra, Marte</li><li>Júpiter, Saturno, Urano, Netuno</li><li>O Sol é uma estrela</li></ul>`,
                 quiz: [
-                    { q: "Quantos planetas tem no Sistema Solar?", opts: ["5", "8", "10", "12"], a: 1 }
+                    { q: "Quantos planetas tem no Sistema Solar?", opts: ["5", "8", "10", "12"], a: 1 },
+                    { q: "O que é o Sol?", opts: ["Um planeta", "Uma estrela", "Uma lua", "Um meteoro"], a: 1 },
+                    { q: "Em qual planeta vivemos?", opts: ["Marte", "Terra", "Júpiter", "Vênus"], a: 1 }
                 ]
             },
             {
                 id: 'd2', title: 'Os Dinossauros', icon: '🦕', requiredLevel: 2,
                 content: `<h3>Gigantes do Passado!</h3><p>Os dinossauros viveram na Terra há milhões de anos atrás!</p><h3>Curiosidades:</h3><ul><li>Existiram por 165 milhões de anos</li><li>Alguns eram enormes, outros pequenos</li><li>Desapareceram há 65 milhões de anos</li></ul>`,
                 quiz: [
-                    { q: "Quando os dinossauros viveram?", opts: ["Ontem", "Há milhões de anos", "Semana passada", "Vivem hoje"], a: 1 }
+                    { q: "Quando os dinossauros viveram?", opts: ["Ontem", "Há milhões de anos", "Semana passada", "Vivem hoje"], a: 1 },
+                    { q: "Os dinossauros ainda existem?", opts: ["Sim, em todo lugar", "Não, desapareceram", "Só na floresta", "Só no mar"], a: 1 },
+                    { q: "Como eram os dinossauros?", opts: ["Todos pequenos", "Alguns grandes, outros pequenos", "Todos iguais", "Todos voavam"], a: 1 }
                 ]
             },
             {
                 id: 'd3', title: 'O Ciclo da Água', icon: '💧', requiredLevel: 3,
                 content: `<h3>A Viagem da Água!</h3><p>A água está sempre viajando: dos oceanos para o céu e de volta!</p><h3>Etapas:</h3><ul><li>Evaporação: água vira vapor</li><li>Condensação: vapor vira nuvem</li><li>Precipitação: chuva cai</li></ul>`,
                 quiz: [
-                    { q: "O que faz a água evaporar?", opts: ["Frio", "Calor do sol", "Vento", "Nada"], a: 1 }
+                    { q: "O que faz a água evaporar?", opts: ["Frio", "Calor do sol", "Vento", "Nada"], a: 1 },
+                    { q: "O que acontece na condensação?", opts: ["Água vira gelo", "Vapor vira nuvem", "Chuva cai", "Nada acontece"], a: 1 },
+                    { q: "O que é precipitação?", opts: ["Água evaporando", "Sol brilhando", "Chuva caindo", "Vento soprando"], a: 1 }
+                ]
+            }
+        ],
+        programacao: [
+            {
+                id: 'p1', title: 'O que é um Computador?', icon: '🖥️', requiredLevel: 1,
+                content: `<h3>Máquinas que Pensam!</h3><p>Computadores são máquinas especiais que seguem instruções muito rápido!</p><h3>Partes do Computador:</h3><ul><li>Teclado: para digitar</li><li>Mouse: para apontar e clicar</li><li>Tela: para ver as coisas</li><li>Cérebro (CPU): faz os cálculos</li></ul>`,
+                quiz: [
+                    { q: "O que usamos para digitar no computador?", opts: ["Mouse", "Teclado", "Tela", "Alto-falante"], a: 1 },
+                    { q: "Para que serve o mouse?", opts: ["Digitar", "Apontar e clicar", "Fazer som", "Nada"], a: 1 },
+                    { q: "O que é a CPU do computador?", opts: ["A tela", "O cérebro", "O mouse", "O teclado"], a: 1 }
+                ]
+            },
+            {
+                id: 'p2', title: 'Algoritmos e Programação', icon: '📝', requiredLevel: 2,
+                content: `<h3>Passo a Passo!</h3><p>Um algoritmo é como uma receita: uma lista de passos para fazer algo acontecer!</p><h3>Exemplo - Escovar os Dentes:</h3><ul><li>1. Pegar a escova e a pasta</li><li>2. Colocar pasta na escova</li><li>3. Escovar os dentes</li><li>4. Enxaguar a boca</li></ul><p>Programar é ensinar o computador a seguir passos assim!</p>`,
+                quiz: [
+                    { q: "O que é um algoritmo?", opts: ["Um jogo", "Uma lista de passos", "Um desenho", "Uma música"], a: 1 },
+                    { q: "O que significa programar?", opts: ["Jogar", "Ensinar o computador", "Assistir TV", "Dormir"], a: 1 },
+                    { q: "Um algoritmo é como uma:", opts: ["Bola", "Receita", "Cor", "Casa"], a: 1 }
+                ]
+            },
+            {
+                id: 'p3', title: 'Criando com Código', icon: '🎮', requiredLevel: 3,
+                content: `<h3>Você é um Criador!</h3><p>Com programação, você pode criar jogos, apps e muito mais!</p><h3>O que Criar:</h3><ul><li>Jogos divertidos</li><li>Animações coloridas</li><li>Histórias interativas</li><li>Aplicativos úteis</li></ul><p>Programar é criar mundos incríveis! 🌟</p>`,
+                quiz: [
+                    { q: "O que você pode criar com programação?", opts: ["Só jogos", "Jogos, apps e muito mais", "Nada", "Só desenhos"], a: 1 },
+                    { q: "Programação serve para:", opts: ["Só estudar", "Criar coisas incríveis", "Só trabalhar", "Nada"], a: 1 },
+                    { q: "Quem pode aprender a programar?", opts: ["Só adultos", "Qualquer pessoa", "Só professores", "Ninguém"], a: 1 }
                 ]
             }
         ]
@@ -88,8 +136,8 @@ let state = {
     currentLesson: null,
     quizStep: 0,
     correctCount: 0,
-    completedLessons: [], // IDs das lições já completadas
-    lastHpRegenTime: Date.now() // Timestamp da última regeneração de HP
+    completedLessons: [],
+    lastHpRegenTime: Date.now()
 };
 
 function init() {
@@ -240,14 +288,13 @@ function nextAction() {
 
 function finishLesson() {
     const total = state.currentLesson.quiz.length;
-    const win = state.correctCount >= total / 2;
+    const win = state.correctCount >= 2; // Precisa acertar pelo menos 2 de 3
     const isFirstTime = !state.completedLessons.includes(state.currentLesson.id);
 
     const oldLevel = state.level;
     let xpGained = 0;
     let heartsGained = 0;
 
-    // Só ganha XP e vidas na primeira vez que completa
     if (win && isFirstTime) {
         xpGained = state.correctCount * 50;
         state.xp += xpGained;
@@ -255,7 +302,6 @@ function finishLesson() {
         heartsGained = state.correctCount;
         state.hp = Math.min(5, state.hp + heartsGained);
 
-        // Marca lição como completada
         state.completedLessons.push(state.currentLesson.id);
     }
 
@@ -267,8 +313,10 @@ function finishLesson() {
     document.getElementById('result-title').textContent = win ? "Missão Cumprida!" : "Continue Tentando!";
 
     let resultDesc = `Você acertou ${state.correctCount} de ${total} perguntas.`;
-    if (!isFirstTime && win) {
+    if (win && !isFirstTime) {
         resultDesc += " (Lição já completada - sem recompensas)";
+    } else if (!win) {
+        resultDesc += " Precisa acertar pelo menos 2 para passar!";
     }
     document.getElementById('result-desc').textContent = resultDesc;
 
@@ -343,16 +391,14 @@ function loadProgress() {
         state.completedLessons = data.completedLessons || [];
         state.lastHpRegenTime = data.lastHpRegenTime || Date.now();
 
-        // Calcular HP regenerado desde a última sessão
         regenerateHpFromOfflineTime();
     }
 }
 
-// Regenera HP baseado no tempo offline
 function regenerateHpFromOfflineTime() {
     const now = Date.now();
     const timePassed = now - state.lastHpRegenTime;
-    const hoursPassedTotal = timePassed / (1000 * 60 * 60); // Convertendo ms para horas
+    const hoursPassedTotal = timePassed / (1000 * 60 * 60);
     const hpToRegenerate = Math.floor(hoursPassedTotal);
 
     if (hpToRegenerate > 0 && state.hp < 5) {
@@ -362,13 +408,12 @@ function regenerateHpFromOfflineTime() {
     }
 }
 
-// Sistema de regeneração de HP (1 por hora)
 function startHpRegeneration() {
     setInterval(() => {
         if (state.hp < 5) {
             const now = Date.now();
             const timeSinceLastRegen = now - state.lastHpRegenTime;
-            const hourInMs = 1000 * 60 * 60; // 1 hora em milissegundos
+            const hourInMs = 1000 * 60 * 60;
 
             if (timeSinceLastRegen >= hourInMs) {
                 state.hp = Math.min(5, state.hp + 1);
@@ -377,10 +422,9 @@ function startHpRegeneration() {
                 saveProgress();
             }
         }
-    }, 60000); // Verifica a cada minuto
+    }, 60000);
 }
 
-// Sistema de regeneração de energia (1 por minuto)
 function startEnergyRegeneration() {
     setInterval(() => {
         if (state.energy < 100) {
@@ -388,7 +432,7 @@ function startEnergyRegeneration() {
             updateUI();
             saveProgress();
         }
-    }, 60000); // 60 segundos = 1 minuto
+    }, 60000);
 }
 
 init();
