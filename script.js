@@ -1,78 +1,82 @@
 const APP_DATA = {
     categories: [
         { id: 'saude', name: 'Saúde', icon: '🍎', color: '#ff5263' },
-        { id: 'espaco', name: 'Espaço', icon: '👨‍🚀', color: '#6a5ae0' },
-        { id: 'natureza', name: 'Natureza', icon: '🌿', color: '#00d68f' }
+        { id: 'esportes', name: 'Esportes', icon: '⚽', color: '#6a5ae0' },
+        { id: 'educacao', name: 'Educação', icon: '📚', color: '#00d68f' }
     ],
     lessons: {
         saude: [
             {
-                id: 's1', title: 'Vilões Germes', icon: '🧼', requiredLevel: 1,
-                content: `<h3>O que são Germes?</h3><p>São bichinhos tão pequenos que não conseguimos ver, mas que amam entrar no nosso corpo para nos deixar cansados.</p><h3>Como vencer?</h3><ul><li>Lavar as mãos por 20 segundos (cante parabéns!)</li><li>Usar sabão sempre!</li><li>Lavar antes de comer.</li></ul>`,
+                id: 's1', title: 'Higiene Diária', icon: '🧼', requiredLevel: 1,
+                content: `<h3>Por que Lavar as Mãos?</h3><p>Nossas mãos tocam em muitas coisas durante o dia e podem carregar germes invisíveis!</p><h3>Como Fazer:</h3><ul><li>Use água e sabão</li><li>Esfregue por 20 segundos</li><li>Lave antes das refeições</li></ul>`,
                 quiz: [
-                    { q: "Qual a melhor arma contra os germes?", opts: ["Perfume", "Sabão e Água", "Pó mágico", "Luvas de ferro"], a: 1, e: "A água e o sabão levam os germes embora pelo ralo! 🧼" },
-                    { q: "Quanto tempo dura a lavagem perfeita?", opts: ["1 segundo", "5 segundos", "20 segundos", "1 hora"], a: 2, e: "20 segundos é o tempo de cantar 'Parabéns pra você' duas vezes! 🎶" }
+                    { q: "Quando devemos lavar as mãos?", opts: ["Só de manhã", "Antes de comer", "Nunca", "Só à noite"], a: 1 }
                 ]
             },
             {
-                id: 's2', title: 'Alimentação Poderosa', icon: '🥗', requiredLevel: 2,
-                content: `<h3>Combustível do Corpo</h3><p>Nosso corpo é como um carro: precisa do combustível certo para funcionar bem!</p><h3>Alimentos Incríveis:</h3><ul><li>Frutas e vegetais dão vitaminas e energia</li><li>Água mantém tudo funcionando</li><li>Proteínas constroem músculos fortes</li></ul>`,
+                id: 's2', title: 'Alimentação Saudável', icon: '🥗', requiredLevel: 2,
+                content: `<h3>Comida é Energia!</h3><p>Nosso corpo precisa de nutrientes para funcionar bem, crescer e ter energia para brincar!</p><h3>Alimentos Importantes:</h3><ul><li>Frutas e vegetais</li><li>Grãos integrais</li><li>Proteínas</li></ul>`,
                 quiz: [
-                    { q: "O que nos dá mais vitaminas?", opts: ["Doces", "Frutas e Vegetais", "Refrigerante", "Salgadinhos"], a: 1, e: "Frutas e vegetais são cheios de vitaminas! 🍎" },
-                    { q: "Por que beber água é importante?", opts: ["Para ficar bonito", "Para matar a sede só", "Para o corpo funcionar bem", "Não é importante"], a: 2, e: "A água ajuda em tudo no nosso corpo! 💧" }
+                    { q: "O que nos dá energia para brincar?", opts: ["Apenas doces", "Alimentos saudáveis", "Refrigerante", "Nada"], a: 1 }
                 ]
             },
             {
-                id: 's3', title: 'Sono Mágico', icon: '😴', requiredLevel: 3,
-                content: `<h3>O Poder do Sono</h3><p>Quando dormimos, nosso corpo se recupera e nossa mente organiza tudo que aprendemos!</p><h3>Benefícios:</h3><ul><li>Crianças precisam de 8-10 horas</li><li>Durante o sono crescemos</li><li>Acordamos cheios de energia</li></ul>`,
+                id: 's3', title: 'Sono e Descanso', icon: '😴', requiredLevel: 3,
+                content: `<h3>Por que Dormir é Importante?</h3><p>Durante o sono, nosso corpo descansa e se prepara para um novo dia cheio de aventuras!</p><h3>Benefícios:</h3><ul><li>Crescemos enquanto dormimos</li><li>Nosso cérebro organiza memórias</li><li>Acordamos com mais energia</li></ul>`,
                 quiz: [
-                    { q: "Quantas horas uma criança deve dormir?", opts: ["2-3 horas", "4-5 horas", "8-10 horas", "15 horas"], a: 2, e: "8 a 10 horas é o ideal para crescer forte! 😴" }
+                    { q: "O que acontece quando dormimos bem?", opts: ["Ficamos cansados", "Crescemos e descansamos", "Nada", "Ficamos doentes"], a: 1 }
                 ]
             }
         ],
-        espaco: [
+        esportes: [
             {
-                id: 'e1', title: 'O Rei Sol', icon: '☀️', requiredLevel: 1,
-                content: `<h3>O Sol é uma estrela!</h3><p>Ele é como uma bateria gigante que dá luz e calor para a Terra.</p><h3>Fatos Espaciais:</h3><ul><li>Ele é 1 milhão de vezes maior que a Terra.</li><li>Sem ele, tudo seria gelado e escuro.</li><li>Nunca olhe direto para ele, ele é muito poderoso!</li></ul>`,
+                id: 'e1', title: 'Futebol Básico', icon: '⚽', requiredLevel: 1,
+                content: `<h3>O Esporte Mais Popular!</h3><p>O futebol é jogado por milhões de pessoas ao redor do mundo!</p><h3>Regras Básicas:</h3><ul><li>Duas equipes de 11 jogadores</li><li>Marcar gols no gol adversário</li><li>Não pode usar as mãos (exceto o goleiro)</li></ul>`,
                 quiz: [
-                    { q: "O que o Sol é na verdade?", opts: ["Um planeta", "Uma lanterna", "Uma estrela", "Um cometa"], a: 2, e: "Sim! O Sol é a estrela mais próxima de nós! ⭐" }
+                    { q: "Quantos jogadores tem cada time de futebol?", opts: ["5", "11", "7", "15"], a: 1 }
                 ]
             },
             {
-                id: 'e2', title: 'A Lua Misteriosa', icon: '🌙', requiredLevel: 2,
-                content: `<h3>Nossa Vizinha Lunar</h3><p>A Lua é o único satélite natural da Terra e nos ilumina à noite!</p><h3>Curiosidades:</h3><ul><li>A Lua não tem luz própria, reflete o Sol</li><li>Ela controla as marés dos oceanos</li><li>Humanos já pisaram na Lua!</li></ul>`,
+                id: 'e2', title: 'Basquete para Iniciantes', icon: '🏀', requiredLevel: 2,
+                content: `<h3>Arremesso na Cesta!</h3><p>No basquete, o objetivo é acertar a bola na cesta do adversário!</p><h3>Como Jogar:</h3><ul><li>Quicar a bola ao se movimentar</li><li>Arremessar na cesta</li><li>Trabalho em equipe</li></ul>`,
                 quiz: [
-                    { q: "De onde vem a luz da Lua?", opts: ["Ela brilha sozinha", "Reflete a luz do Sol", "Usa eletricidade", "Magia"], a: 1, e: "A Lua é como um espelho gigante no espaço! 🌙" }
+                    { q: "Como você se movimenta com a bola no basquete?", opts: ["Correndo com ela", "Quicando", "Chutando", "Arremessando"], a: 1 }
+                ]
+            },
+            {
+                id: 'e3', title: 'Natação e Segurança', icon: '🏊', requiredLevel: 3,
+                content: `<h3>Nadando com Segurança!</h3><p>Nadar é ótimo exercício e muito divertido, mas sempre precisamos de segurança!</p><h3>Regras Importantes:</h3><ul><li>Sempre nade com supervisão</li><li>Use colete se não souber nadar</li><li>Respeite a profundidade</li></ul>`,
+                quiz: [
+                    { q: "Quando podemos nadar sozinhos?", opts: ["Sempre", "Nunca, precisamos supervisão", "Só de dia", "Quando quiser"], a: 1 }
                 ]
             }
         ],
-        natureza: [
+        educacao: [
             {
-                id: 'n1', title: 'As Árvores Respiram', icon: '🌳', requiredLevel: 1,
-                content: `<h3>Pulmão do Mundo</h3><p>As árvores pegam o ar 'sujo' (gás carbônico) e soltam ar 'limpinho' (oxigênio) para nós.</p><h3>Amigo da Natureza:</h3><ul><li>Árvores dão sombra e frutas.</li><li>Elas servem de casa para os passarinhos.</li><li>Plantar uma árvore é como criar um super-herói!</li></ul>`,
+                id: 'd1', title: 'O Sistema Solar', icon: '🌍', requiredLevel: 1,
+                content: `<h3>Nosso Lar no Espaço!</h3><p>A Terra faz parte do Sistema Solar, junto com outros 7 planetas que giram ao redor do Sol!</p><h3>Planetas:</h3><ul><li>Mercúrio, Vênus, Terra, Marte</li><li>Júpiter, Saturno, Urano, Netuno</li><li>O Sol é uma estrela</li></ul>`,
                 quiz: [
-                    { q: "O que as árvores soltam para nós?", opts: ["Fumaça", "Oxigênio", "Areia", "Chuva"], a: 1, e: "O oxigênio é o que respiramos para viver! 🍃" }
+                    { q: "Quantos planetas tem no Sistema Solar?", opts: ["5", "8", "10", "12"], a: 1 }
                 ]
             },
             {
-                id: 'n2', title: 'Ciclo da Água', icon: '💧', requiredLevel: 2,
-                content: `<h3>A Viagem da Água</h3><p>A água está sempre viajando: dos rios para as nuvens e de volta para a terra!</p><h3>O Ciclo:</h3><ul><li>O Sol aquece a água (evaporação)</li><li>Forma nuvens (condensação)</li><li>Cai como chuva (precipitação)</li></ul>`,
+                id: 'd2', title: 'Os Dinossauros', icon: '🦕', requiredLevel: 2,
+                content: `<h3>Gigantes do Passado!</h3><p>Os dinossauros viveram na Terra há milhões de anos atrás!</p><h3>Curiosidades:</h3><ul><li>Existiram por 165 milhões de anos</li><li>Alguns eram enormes, outros pequenos</li><li>Desapareceram há 65 milhões de anos</li></ul>`,
                 quiz: [
-                    { q: "O que faz a água virar nuvem?", opts: ["Vento forte", "Calor do Sol", "Frio", "Trovão"], a: 1, e: "O calor do Sol faz a água evaporar! ☀️💧" }
+                    { q: "Quando os dinossauros viveram?", opts: ["Ontem", "Há milhões de anos", "Semana passada", "Vivem hoje"], a: 1 }
                 ]
             },
             {
-                id: 'n3', title: 'Animais Incríveis', icon: '🦁', requiredLevel: 3,
-                content: `<h3>Biodiversidade</h3><p>Nosso planeta tem milhões de espécies diferentes de animais, cada um com superpoderes únicos!</p><h3>Exemplos:</h3><ul><li>Guepardos correm a 110 km/h</li><li>Baleias podem prender a respiração por horas</li><li>Formigas levantam 50x seu peso</li></ul>`,
+                id: 'd3', title: 'O Ciclo da Água', icon: '💧', requiredLevel: 3,
+                content: `<h3>A Viagem da Água!</h3><p>A água está sempre viajando: dos oceanos para o céu e de volta!</p><h3>Etapas:</h3><ul><li>Evaporação: água vira vapor</li><li>Condensação: vapor vira nuvem</li><li>Precipitação: chuva cai</li></ul>`,
                 quiz: [
-                    { q: "Qual animal é o mais rápido da terra?", opts: ["Leão", "Guepardo", "Coelho", "Cavalo"], a: 1, e: "O guepardo é o velocista da natureza! 🐆" }
+                    { q: "O que faz a água evaporar?", opts: ["Frio", "Calor do sol", "Vento", "Nada"], a: 1 }
                 ]
             }
         ]
     }
 };
 
-// XP necessário para cada nível
 const XP_PER_LEVEL = [0, 100, 250, 450, 700, 1000, 1400, 1850, 2350, 2900, 3500];
 
 let state = {
@@ -83,14 +87,17 @@ let state = {
     currentCat: null,
     currentLesson: null,
     quizStep: 0,
-    correctCount: 0
+    correctCount: 0,
+    completedLessons: [], // IDs das lições já completadas
+    lastHpRegenTime: Date.now() // Timestamp da última regeneração de HP
 };
 
-// --- Inicialização ---
 function init() {
     renderCategories();
     loadProgress();
     updateUI();
+    startHpRegeneration();
+    startEnergyRegeneration();
 }
 
 function updateUI() {
@@ -143,9 +150,13 @@ function openCategory(id) {
     const container = document.getElementById('lesson-list-container');
     container.innerHTML = APP_DATA.lessons[id].map(l => {
         const isLocked = state.level < l.requiredLevel;
+        const isCompleted = state.completedLessons.includes(l.id);
+        const completedClass = isCompleted ? 'completed' : '';
+        const completedIcon = isCompleted ? ' ✓' : '';
+
         return `
-            <div class="lesson-item ${isLocked ? 'locked' : ''}" onclick="openLesson('${l.id}')">
-                <span>${l.icon} ${l.title}</span>
+            <div class="lesson-item ${isLocked ? 'locked' : ''} ${completedClass}" onclick="openLesson('${l.id}')">
+                <span>${l.icon} ${l.title}${completedIcon}</span>
                 <span>${isLocked ? '🔒 Nível ' + l.requiredLevel : '➔'}</span>
             </div>
         `;
@@ -162,12 +173,6 @@ function openLesson(id) {
         return;
     }
 
-    // Energia desabilitada para testes
-    // if (state.energy < 5) {
-    //     alert("Sua energia está baixa! Espere um pouco para recarregar. ⚡");
-    //     return;
-    // }
-
     state.currentLesson = lesson;
     document.getElementById('content-body').innerHTML = `
         <h1 style="font-size:2.5rem; margin-bottom:15px">${lesson.icon}</h1>
@@ -180,7 +185,6 @@ function openLesson(id) {
 function startQuiz() {
     state.quizStep = 0;
     state.correctCount = 0;
-    // state.energy -= 5; // Desabilitado para testes
     updateUI();
     showScreen('quiz');
     renderQuestion();
@@ -219,17 +223,9 @@ function handleAnswer(idx) {
         updateUI();
     }
 
-    // Aguardar 1 segundo para mostrar o feedback visual e ir para próxima
     setTimeout(() => {
         nextAction();
     }, 1000);
-}
-
-function showFeedback(correct, msg) {
-    const panel = document.getElementById('feedback-panel');
-    document.getElementById('feedback-emoji').textContent = correct ? "✅" : "❌";
-    document.getElementById('feedback-msg').textContent = msg;
-    panel.classList.add('show');
 }
 
 function nextAction() {
@@ -245,19 +241,22 @@ function nextAction() {
 function finishLesson() {
     const total = state.currentLesson.quiz.length;
     const win = state.correctCount >= total / 2;
+    const isFirstTime = !state.completedLessons.includes(state.currentLesson.id);
 
     const oldLevel = state.level;
     let xpGained = 0;
     let heartsGained = 0;
 
-    if (win) {
-        // 50 XP por questão acertada
+    // Só ganha XP e vidas na primeira vez que completa
+    if (win && isFirstTime) {
         xpGained = state.correctCount * 50;
         state.xp += xpGained;
 
-        // 1 coração por questão acertada (máximo de 5 vidas)
         heartsGained = state.correctCount;
         state.hp = Math.min(5, state.hp + heartsGained);
+
+        // Marca lição como completada
+        state.completedLessons.push(state.currentLesson.id);
     }
 
     const newLevel = calculateLevel(state.xp);
@@ -266,11 +265,16 @@ function finishLesson() {
 
     document.getElementById('result-icon').textContent = win ? "🏆" : "💪";
     document.getElementById('result-title').textContent = win ? "Missão Cumprida!" : "Continue Tentando!";
-    document.getElementById('result-desc').textContent = `Você acertou ${state.correctCount} de ${total} perguntas.`;
+
+    let resultDesc = `Você acertou ${state.correctCount} de ${total} perguntas.`;
+    if (!isFirstTime && win) {
+        resultDesc += " (Lição já completada - sem recompensas)";
+    }
+    document.getElementById('result-desc').textContent = resultDesc;
+
     document.getElementById('xp-gain').textContent = xpGained;
     document.getElementById('hp-gain').textContent = heartsGained;
 
-    // Mostrar mensagem de level up
     const levelUpBox = document.getElementById('level-up-box');
     if (leveledUp) {
         document.getElementById('new-level').textContent = `Nível ${newLevel}`;
@@ -291,10 +295,7 @@ function showScreen(name) {
 }
 
 function gameOver() {
-    alert("Suas vidas acabaram! Mas não desista, você ganhou 5 novas vidas para continuar aprendendo! 🌈");
-    state.hp = 5;
-    state.energy = 100;
-    updateUI();
+    alert("Suas vidas acabaram! Aguarde a regeneração de vida para continuar jogando. ⏰");
     showScreen('home');
 }
 
@@ -324,7 +325,9 @@ function saveProgress() {
         xp: state.xp,
         level: state.level,
         hp: state.hp,
-        energy: state.energy
+        energy: state.energy,
+        completedLessons: state.completedLessons,
+        lastHpRegenTime: state.lastHpRegenTime
     };
     localStorage.setItem('educube_state', JSON.stringify(saveData));
 }
@@ -337,16 +340,55 @@ function loadProgress() {
         state.level = data.level || 1;
         state.hp = data.hp || 5;
         state.energy = data.energy || 100;
+        state.completedLessons = data.completedLessons || [];
+        state.lastHpRegenTime = data.lastHpRegenTime || Date.now();
+
+        // Calcular HP regenerado desde a última sessão
+        regenerateHpFromOfflineTime();
     }
 }
 
-// Recuperar energia automaticamente
-setInterval(() => {
-    if (state.energy < 100) {
-        state.energy = Math.min(100, state.energy + 1);
-        updateUI();
+// Regenera HP baseado no tempo offline
+function regenerateHpFromOfflineTime() {
+    const now = Date.now();
+    const timePassed = now - state.lastHpRegenTime;
+    const hoursPassedTotal = timePassed / (1000 * 60 * 60); // Convertendo ms para horas
+    const hpToRegenerate = Math.floor(hoursPassedTotal);
+
+    if (hpToRegenerate > 0 && state.hp < 5) {
+        state.hp = Math.min(5, state.hp + hpToRegenerate);
+        state.lastHpRegenTime = now;
         saveProgress();
     }
-}, 60000); // 60 segundos = 1 minuto
+}
+
+// Sistema de regeneração de HP (1 por hora)
+function startHpRegeneration() {
+    setInterval(() => {
+        if (state.hp < 5) {
+            const now = Date.now();
+            const timeSinceLastRegen = now - state.lastHpRegenTime;
+            const hourInMs = 1000 * 60 * 60; // 1 hora em milissegundos
+
+            if (timeSinceLastRegen >= hourInMs) {
+                state.hp = Math.min(5, state.hp + 1);
+                state.lastHpRegenTime = now;
+                updateUI();
+                saveProgress();
+            }
+        }
+    }, 60000); // Verifica a cada minuto
+}
+
+// Sistema de regeneração de energia (1 por minuto)
+function startEnergyRegeneration() {
+    setInterval(() => {
+        if (state.energy < 100) {
+            state.energy = Math.min(100, state.energy + 1);
+            updateUI();
+            saveProgress();
+        }
+    }, 60000); // 60 segundos = 1 minuto
+}
 
 init();
