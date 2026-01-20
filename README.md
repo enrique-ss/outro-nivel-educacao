@@ -15,24 +15,24 @@ Um jogo educativo onde crianças aprendem sobre Saúde, Esportes e Educação at
 
 ## Sistema de Jogo
 
-- **Vidas**: 5 corações ❤️ (perde ao errar, ganha ao acertar, regenera 1/hora)
+- **Vidas**: Inicia com 5 corações ❤️ (perde ao errar, ganha ao acertar, regenera 1/hora)
 - **XP**: 50 pontos por acerto
-- **Níveis**: Progresso de 1 a 11+
-- **Energia**: 100 pontos (regenera 1/min)
+- **Níveis**: Progresso de 1 a 10
+- **Energia**: Inicia com 100 pontos ⚡ (perde 5 ao iniciar uma lição, regenera 1/min)
 
 ## Regras Principais
 
 - Acerte 50%+ das questões para vencer
-- Game Over ao chegar em 0 vidas (precisa esperar regenerar para continuar)
+- Ao chegar em 0 vidas precisa esperar regenerar pelo menos 1 para continuar
+- Ao ficar com menos de 5 energias precisa esperar regenerar pelo menos 5 para continuar
 - Cada categoria desbloqueia 1 nova lição por nível alcançado
-- Pode repetir lições, mas só ganha XP e vidas na primeira vez
-- Progresso salvo automaticamente no navegador
+- Pode repetir lições, mas só ganha XP e vidas na primeira vez que concluir
 
 ## Conteúdo
 
 **3 categorias** com lições progressivas:
 - **🍎 Saúde**: Higiene, alimentação, bem-estar
-- **⚽ Esportes**: Atividades físicas, regras, atletas
+- **⚽ Esportes**: Atividades físicas, regras, segurança
 - **📚 Educação**: Conhecimentos gerais variados
 
 ---
