@@ -1,40 +1,21 @@
-# 🚀 EduCube
+# Outro Nível Educação
 
-Plataforma educacional gamificada para crianças de 6 a 12 anos.
+Plataforma educacional gamificada para crianças de 6 a 12 anos. O aluno escolhe uma categoria, estuda o conteúdo da lição, responde um quiz e ganha XP, sobe de nível e desbloqueia novas lições.
 
-## O que é?
+Acesse em: [enrique-ss.github.io/outro-nivel-educacao](https://enrique-ss.github.io/outro-nivel-educacao)
 
-Um jogo educativo onde crianças aprendem sobre Saúde, Esportes e Educação através de lições interativas e quizzes.
+## Como funciona
 
-## Como funciona?
+Escolha uma das quatro categorias: Saúde, Esportes, Educação ou Programação. Estude o conteúdo, responda o quiz e acerte pelo menos 50% para vencer. XP e vidas só são concedidos na primeira conclusão de cada lição.
 
-1. Escolhe uma categoria (🍎 Saúde, ⚽ Esportes, 📚 Educação, 🤖 Programação)
-2. Estuda o conteúdo da lição
-3. Responde o quiz
-4. Ganha XP, sobe de nível e desbloqueia novas lições
+## Sistema de jogo
 
-## Sistema de Jogo
+Vidas, XP e energia controlam o progresso. O jogador começa com 5 corações e 100 de energia. Vidas se regeneram a cada hora, energia a cada minuto. Ao zerar vidas ou energia, é preciso esperar antes de continuar.
 
-- **Vidas**: Inicia com 5 corações ❤️ (perde ao errar, ganha ao acertar, regenera 1/hora)
-- **XP**: 50 pontos por acerto
-- **Níveis**: Progresso de 1 a 10
-- **Energia**: Inicia com 100 pontos ⚡ (perde 5 ao iniciar uma lição, regenera 1/min)
+## Stack
 
-## Regras Principais
-
-- Acerte 50%+ das questões para vencer
-- Ao chegar em 0 vidas precisa esperar regenerar pelo menos 1 para continuar
-- Ao ficar com menos de 5 energias precisa esperar regenerar pelo menos 5 para continuar
-- Cada categoria desbloqueia 1 nova lição por nível alcançado
-- Pode repetir lições, mas só ganha XP e vidas na primeira vez que concluir
-
-## Conteúdo
-
-**3 categorias** com lições progressivas:
-- **🍎 Saúde**: Higiene, alimentação, bem-estar
-- **⚽ Esportes**: Atividades físicas, regras, segurança
-- **📚 Educação**: Conhecimentos gerais variados
+HTML, CSS e JavaScript puro.
 
 ---
 
-**Objetivo**: Tornar o aprendizado divertido através de gamificação.
+Desenvolvido por Luiz Enrique.
