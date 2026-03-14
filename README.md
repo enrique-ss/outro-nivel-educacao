@@ -2,7 +2,7 @@
 
 Plataforma educacional gamificada para crianças de 6 a 12 anos. O aluno escolhe uma categoria, estuda o conteúdo da lição, responde um quiz e ganha XP, sobe de nível e desbloqueia novas lições.
 
-Acesse em: [enrique-ss.github.io/outro-nivel-educacao](https://enrique-ss.github.io/outro-nivel-educacao)
+Acesse em: [enrique-ss.github.io/outro-nivel-educacao](https://enrique-ss.github.io/outro-nivel-literatura)
 
 ## Como funciona
 
